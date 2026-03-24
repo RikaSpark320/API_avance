@@ -1,0 +1,5 @@
+class LoginForm (FlaskForm)
+    username =StringField ('Usuario', validators = [DataRequired()])
+    password =PasswordField ('Contraseña', validators = [DataRequired()])
+    remember_me =BooleanField ('Recordarme')
+    submit = SubmitField ('Ingresar')
